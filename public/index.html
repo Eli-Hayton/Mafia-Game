@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Mafia Lobby</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header>
+        <h1>Mafia Lobby</h1>
+        <p>Create a lobby or join one from your phone.</p>
+      </header>
+
+      <section id="setup-screen" class="card">
+        <div class="panel">
+          <h2>Your Name</h2>
+          <input id="player-name" placeholder="Enter your name" />
+          <button id="create-btn">Create Lobby</button>
+          <input id="join-code" placeholder="Lobby code" />
+          <button id="join-btn">Join Lobby</button>
+        </div>
+      </section>
+
+      <section id="lobby-screen" class="card" hidden>
+        <h2>Lobby Code: <span id="lobby-code"></span></h2>
+        <p>Share this code with your friends so they can join from their phones.</p>
+        <div id="settings-panel" class="settings-panel">
+          <label>Night length (seconds)</label>
+          <input id="night-length" type="number" min="5" />
+          <label>Day length (seconds)</label>
+          <input id="day-length" type="number" min="5" />
+          <button id="save-settings-btn">Save Settings</button>
+        </div>
+        <div id="player-list" class="player-list"></div>
+        <button id="start-btn">Start Game</button>
+      </section>
+
+      <section id="game-screen" class="card" hidden>
+        <h2 id="phase-title"></h2>
+        <p id="timer-text" class="timer"></p>
+        <p id="role-card" class="role-card"></p>
+        <div id="action-panel"></div>
+        <div id="result-panel"></div>
+      </section>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+:root {
+  color-scheme: dark;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #111827, #1e293b);
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+.app-shell {
+  width: min(100%, 720px);
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.panel + .panel {
+  margin-top: 16px;
+}
+
+input,
+button {
+  width: 100%;
+  border-radius: 12px;
+  border: 0;
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+button {
+  background: #ef4444;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+.settings-panel {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.settings-panel label {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.player-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.player-pill {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 10px 12px;
+}
+
+.role-card {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fde68a;
+}
+
+.timer {
+  color: #93c5fd;
+  font-weight: 600;
+}
+
+.action-btn {
+  margin-top: 8px;
+  background: #2563eb;
+}
+
+.action-btn.selected {
+  background: #16a34a;
+  outline: 2px solid #bbf7d0;
+}
+
+.vote-btn {
+  background: #7c3aed;
+}
+
+.vote-btn.selected {
+  background: #16a34a;
+  outline: 2px solid #bbf7d0;
+}
+
+.skip-btn {
+  background: #374151;
+}
+
+.result-box {
+  margin-top: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.result-banner {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.result-banner.kill {
+  background: rgba(248, 113, 113, 0.2);
+  color: #fecaca;
+  border: 1px solid rgba(248, 113, 113, 0.35);
+}
+
+.result-banner.win {
+  background: rgba(74, 222, 128, 0.2);
+  color: #bbf7d0;
+  border: 1px solid rgba(74, 222, 128, 0.35);
+}
+
+.result-banner.lose {
+  background: rgba(248, 113, 113, 0.2);
+  color: #fecaca;
+  border: 1px solid rgba(248, 113, 113, 0.35);
+}
+
+.end-game-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 4px 0 8px;
+}
+
+.end-game-title.win {
+  color: #86efac;
+}
+
+.end-game-title.lose {
+  color: #fca5a5;
+}
+
+.role-reveal-list {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.role-reveal-list p {
+  margin: 6px 0;
+}

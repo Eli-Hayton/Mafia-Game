@@ -1,0 +1,13 @@
+{
+  "name": "mafia-lobby-game",
+  "version": "1.0.0",
+  "description": "A simple Mafia lobby and game prototype for phones and desktops",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.1.5"
+  }
+}
